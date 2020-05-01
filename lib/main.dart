@@ -19,7 +19,10 @@ void main() async {
     routes: {
       '/splash':(BuildContext context) => SplashScreen(),
       '/menu': (BuildContext context) => MainMenuScreen(),
-      '/game': (BuildContext context) => game.widget
+      '/game': (BuildContext context) => new WillPopScope( // prevent Navigator pop using hardware back button
+        onWillPop: () async => false,
+        child: game.widget // the actual gameplay screen/widget
+      )
     }
   ));
 

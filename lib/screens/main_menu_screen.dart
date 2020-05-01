@@ -12,7 +12,7 @@ class MainMenuScreen extends StatelessWidget {
         children: <Widget>[
           FlatButton(
             color: Colors.blue,
-            child: Text('Go to main menu'),
+            child: Text('Start the game'),
             onPressed: (){
               Navigator.pushNamed(context, '/game');
             },
