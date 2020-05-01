@@ -26,8 +26,6 @@ void main() async {
     }
   ));
 
-//  runApp(game.widget);
-
   Util flameUtil = Util();
   await flameUtil.fullScreen();
   await flameUtil.setOrientation(DeviceOrientation.portraitUp);
