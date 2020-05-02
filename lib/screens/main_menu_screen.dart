@@ -1,4 +1,4 @@
-import 'package:flametest/screens/game_screen.dart';
+import 'package:flametest/game.dart';
 import 'package:flutter/material.dart';
 
 class MainMenuScreen extends StatelessWidget {
